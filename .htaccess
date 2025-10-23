@@ -1,0 +1,21 @@
+# --------------------------------------------
+# fixlo.info 안정 리다이렉트 (Cloudflare + Ionos)
+# HTTPS 강제 + www 제거
+# --------------------------------------------
+
+RewriteEngine On
+
+# 1. Cloudflare 환경에서 HTTPS 체크
+# 2. www가 있을 경우 체크
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+RewriteCond %{HTTP_HOST} ^www\.fixlo\.info$ [NC]
+
+# HTTPS + www 제거
+RewriteRule ^(.*)$ https://fixlo.info/$1 [R=301,L]
+
+# 3. 루트 접근 기본 페이지 지정 (필요 시)
+DirectoryIndex index.html index.php
+
+# --------------------------------------------
+# 끝
+# --------------------------------------------
