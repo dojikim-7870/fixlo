@@ -1,39 +1,36 @@
 # robots.txt for Fixlo (https://fixlo.info)
-# Last updated: 2025-10-12
+# Optimized for SEO + AdSense (Updated: 2025-12-05)
 
 User-agent: *
 Allow: /
-Disallow: /scripts/
-Disallow: /styles/
-Disallow: /images/temp/
+Allow: /styles/
+Allow: /scripts/
 Disallow: /private/
 Disallow: /cgi-bin/
 
-# Prevent crawling of duplicate query URLs
-Disallow: /*?*
+# Prevent UTM & referral tracking duplicates
+Disallow: *?utm_*
+Disallow: *?ref=*
 
-# Sitemap location
+# Main sitemap
 Sitemap: https://fixlo.info/sitemap.xml
 
-# Crawl delay for respectful indexing (optional)
-Crawl-delay: 10
-
-# AdSense compliance: allow Googlebot access
+# AdSense bot access (required)
 User-agent: Mediapartners-Google
 Allow: /
 
-# Additional major bots (optional)
+# Googlebot explicit allow
 User-agent: Googlebot
 Allow: /
 
+# Bing, DuckDuckGo allow
 User-agent: Bingbot
 Allow: /
-
 User-agent: DuckDuckBot
 Allow: /
 
+# Block China/Russia crawlers (optional)
 User-agent: Baiduspider
 Disallow: /
-
 User-agent: Yandex
 Disallow: /
