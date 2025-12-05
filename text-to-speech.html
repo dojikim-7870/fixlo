@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-57524D22');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6237171158673362"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Text to Speech converter. Convert any text into natural-sounding speech with customizable voice options, pitch, and speed controls.">
+    <meta name="keywords" content="text to speech, TTS, voice synthesis, speech converter, read aloud">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Text to Speech Converter - Free Online TTS Tool | Fixlo">
+    <meta property="og:description" content="Convert text to speech with natural voices. Free online TTS tool with customizable options.">
+    <meta property="og:type" content="website">
+
+    <title>Text to Speech Converter - Free Online TTS Tool | Fixlo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFL9069BDJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CFL9069BDJ');
+</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57524D22"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="/" class="logo">
+                    <img src="/images/my-logo.png" alt="logo" class="logo-icon">
+                    <span class="logo-text">Fixlo</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav" id="mainNav">
+                    <a href="/pages/text-to-speech.html" class="nav-link active">Text to Speech</a>
+                    <a href="/pages/speech-to-text.html" class="nav-link">Speech to Text</a>
+                    <a href="/pages/text-summarizer.html" class="nav-link">Text Summarizer</a>
+                    <a href="/pages/expense-tracker.html" class="nav-link">Expense Tracker</a>
+                    <a href="/pages/pomodoro-timer.html" class="nav-link">Pomodoro Timer</a>
+                    <a href="/pages/memo-pad.html" class="nav-link">Memo Pad</a>
+                    <a href="/pages/about.html" class="nav-link">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<section class="hero hero-small">
+  <div class="container">
+    <h1 class="hero-title">
+      <span>Text to Speech</span>
+    </h1>
+    <p class="hero-description">
+     "Convert any text into natural-sounding speech instantly with customizable voice options, pitch, and speed controls — your free and easy-to-use TTS tool."
+    </p>
+  </div>
+  <div class="hero-decoration decoration-1"></div>
+  <div class="hero-decoration decoration-2"></div>
+</section>
+
+
+    <main class="page-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a> &gt; <span>Text to Speech</span>
+            </div>
+
+            
+
+            <div class="tool-layout">
+                <div class="tool-main">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">🔊 Convert Text to Speech</h2>
+                        </div>
+                        <div class="card-content">
+                            <div class="form-group">
+                                <label for="tts-text">Enter Text</label>
+                                <textarea id="tts-text" rows="8" placeholder="Type or paste your text here...">Hello! Welcome to Fixlo. This is a demonstration of our text to speech tool.</textarea>
+                            </div>
+
+                            <div class="controls-grid">
+                                <div class="form-group">
+                                    <label for="tts-voice">Voice</label>
+                                    <select id="tts-voice">
+                                        <option>Loading voices...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Pitch: <span id="pitch-value">1.0</span></label>
+                                    <input type="range" id="tts-pitch" min="0.5" max="2" step="0.1" value="1">
+                                </div>
+                                <div class="form-group">
+                                    <label>Speed: <span id="rate-value">1.0</span></label>
+                                    <input type="range" id="tts-rate" min="0.5" max="2" step="0.1" value="1">
+                                </div>
+                            </div>
+
+                            <div class="button-group">
+                                <button class="btn btn-primary" id="play-btn">▶ Play</button>
+                                <button class="btn btn-outline" id="pause-btn">⏸ Pause</button>
+                                <button class="btn btn-outline" id="stop-btn">⏹ Stop</button>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                <aside class="tool-sidebar">
+                    <div class="card card-accent">
+                        <div class="card-header">
+                            <h3 class="card-title">💡 Quick Tips</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="tips-list">
+                                <li>Use punctuation for natural pauses</li>
+                                <li>Adjust speed for clarity</li>
+                                <li>Try different voices for variety</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Features</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="features-list">
+                                <li>Multiple voice options</li>
+                                <li>Adjustable pitch & speed</li>
+                                <li>Pause and resume playback</li>
+                                <li>No length limit</li>
+                                <li>Works offline</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- How to Use -->
+            <div class="info-section">
+                <h2 class="section-title">How to Use</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Enter Your Text</h3>
+                        <p>Type or paste the text you want to convert into the text area above.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Customize Settings</h3>
+                        <p>Select your preferred voice, adjust pitch and speed to your liking.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Play & Listen</h3>
+                        <p>Click the Play button and listen to your text being read aloud.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Use Cases -->
+            <div class="info-section">
+                <h2 class="section-title">Use Cases</h2>
+                <div class="use-cases-grid">
+                    <div class="use-case">
+                        <div class="use-case-icon">📚</div>
+                        <h3>Learning & Education</h3>
+                        <p>Listen to study materials, textbooks, and articles while multitasking or on the go.</p>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-case-icon">👁️</div>
+                        <h3>Accessibility</h3>
+                        <p>Help visually impaired users access written content through audio.</p>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-case-icon">🎬</div>
+                        <h3>Content Creation</h3>
+                        <p>Generate voiceovers for videos, presentations, and podcasts quickly.</p>
+                    </div>
+                    <div class="use-case">
+                        <div class="use-case-icon">📧</div>
+                        <h3>Email & Messages</h3>
+                        <p>Listen to long emails or messages when reading is inconvenient.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="info-section">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>Is there a character limit for text-to-speech conversion?</h3>
+                        <p>No, you can convert unlimited text. However, very long texts may take longer to process depending on your browser's capabilities.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I download the audio file?</h3>
+                        <p>Currently, the tool plays audio in real-time. We're working on adding download functionality in a future update.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Which languages are supported?</h3>
+                        <p>The available languages depend on your browser's speech synthesis capabilities. Most modern browsers support multiple languages and accents.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Does this work offline?</h3>
+                        <p>Yes! The text-to-speech functionality works completely offline as it uses your browser's built-in speech synthesis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- Footer --><footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      
+      <div class="footer-about">
+        <div class="footer-brand">
+ <img src="/images/fixlo-logo.png" alt="Fixlo Logo" class="logo-icon">
+  <span class="footer-logo-text">Fixlo</span>
+        </div>
+        <p class="footer-description">
+          Your all-in-one productivity toolkit. Free, fast, and feature-rich tools for everyone.
+        </p>
+        <div class="footer-social">
+          <a href="https://facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com" class="twitter" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://linkedin.com" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-container">
+        <div>
+          <h4 class="footer-title">Tools</h4>
+          <ul class="footer-links">
+            <li><a href="/pages/text-to-speech.html">Text to Speech</a></li>
+            <li><a href="/pages/speech-to-text.html">Speech to Text</a></li>
+            <li><a href="/pages/text-summarizer.html">Text Summarizer</a></li>
+            <li><a href="/pages/pomodoro-timer.html">Pomodoro Timer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/contact.html">Contact Us</a></li>
+            <li><a href="https://utilcentral.com">Our networks</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/pages/terms-of-use.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p class="footer-tagline">© 2025 Fixlo.info. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="../main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"76647fa6e8154352930885598e36a565","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
